@@ -40,15 +40,11 @@ if (process.env.NODE_ENV === 'dev') {
     urlDB = process.env.MONGO_URI;
 }
 
+//=========================
+// PUERTO
+//=========================
 
-/* const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://pelsmi11:<faztpassword>@cluster0.tno1u.mongodb.net/<cafe>?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("cafe");
-  // perform actions on the collection object
-  client.close();
-}); */
+process.env.CLIENT_ID = process.env.CLIENT_ID || '2689648786-99m1c78lju0a5659jlb0drqo62pjpsab.apps.googleusercontent.com';
 
 
 process.env.URLDB = urlDB;
